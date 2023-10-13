@@ -101,3 +101,12 @@ button:focus-visible {
 .full-width-react-player .react-player div {
   position: absolute;
 }
+
+
+.background-video-play-button {
+  width: 40px;
+  height: 40px;
+  padding: 8px;
+  background-color: rgba(93,113,152,.6);
+  color: #fff;
+}
