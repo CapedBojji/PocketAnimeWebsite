@@ -71,3 +71,32 @@ button:focus-visible {
     background-color: #f9f9f9;
   }
 }
+.full-height-react-player {
+  height: 100% !important;
+  aspect-ratio: 16/9 !important;
+
+}
+
+.full-height-react-player .react-player {
+  aspect-ratio: 16/9 !important;
+  position: relative;
+}
+
+.full-height-react-player .react-player div {
+  position: absolute;
+}
+
+.full-width-react-player {
+  height: 100% !important;
+  aspect-ratio: 16/9 !important;
+
+}
+
+.full-width-react-player .react-player {
+  aspect-ratio: 16/9 !important;
+  position: relative;
+}
+
+.full-width-react-player .react-player div {
+  position: absolute;
+}
