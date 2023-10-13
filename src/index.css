@@ -71,10 +71,11 @@ button:focus-visible {
     background-color: #f9f9f9;
   }
 }
+
 .full-height-react-player {
   height: 100% !important;
   aspect-ratio: 16/9 !important;
-
+  width: auto !important;
 }
 
 .full-height-react-player .react-player {
@@ -87,9 +88,9 @@ button:focus-visible {
 }
 
 .full-width-react-player {
-  height: 100% !important;
+  width: 100% !important;
   aspect-ratio: 16/9 !important;
-
+  height: auto !important;
 }
 
 .full-width-react-player .react-player {

@@ -19,9 +19,7 @@ const meta = {
             );
         },
     ],
-    tags: ['autodocs'],
-    argTypes: {
-    },
+    tags: ['autodocs']
 } satisfies Meta<typeof VideoPlayer>;
 
 
@@ -31,11 +29,15 @@ export default meta;
 type Story = StoryObj<typeof meta>;
 
 
-export const Default: Story = {
+export const FullWidth: Story = {
     args : {
         src : "https://blz-contentstack-assets.akamaized.net/v3/assets/blt9c12f249ac15c7ec/blta5464cb78c39385a/63369a3de3c2a2741688cb6b/F2P_Trailer.mp4",
-        playing: true,
-        loop: true,
-        muted: true
-    } 
+    }
+};
+
+export const FullHeight: Story = {
+    args : {
+        src : "https://blz-contentstack-assets.akamaized.net/v3/assets/blt9c12f249ac15c7ec/blta5464cb78c39385a/63369a3de3c2a2741688cb6b/F2P_Trailer.mp4",
+        fullHeight: true
+    }
 };
