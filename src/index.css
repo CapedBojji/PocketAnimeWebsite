@@ -1,3 +1,22 @@
+@font-face {
+  font-family: "Config Condensed";
+  src: local("Config Condensed"),
+   url("./fonts/ConfigCondensedBold.otf") format("opentype");
+  font-weight: bold;
+ }
+
+ @font-face {
+  font-family: "Heebo Thin";
+  src: url("./fonts/heebo-variable.ttf");
+}
+
+@font-face {
+  font-family: "FF Mark W05", Arial, sans-serif;
+  src: url("./fonts/MarkPro-Bold.woff2");
+  font-variation-settings: normal;
+  font-feature-settings: normal;
+}
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;

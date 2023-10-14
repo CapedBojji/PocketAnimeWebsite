@@ -1,5 +1,6 @@
 import { Meta, StoryObj } from'@storybook/react'
 import VideoPlayer from './VideoPlayer.tsx'
+import Icon from '../Icon/Icon.tsx';
 
 
 const meta = {
@@ -12,7 +13,7 @@ const meta = {
         (Story) => {
             return (
                 <>
-                    <div className='max-h-[1050px] h-[90vh] relative min-h-[800px]'>
+                    <div className='w-[912px] h-[513px]'>
                         <Story />
                     </div>
                 </>
@@ -41,3 +42,15 @@ export const FullHeight: Story = {
         fullHeight: true
     }
 };
+
+export const LightVideo: Story = {
+    args : {
+        src : "https://youtu.be/GE74zkzunZw",
+        children: <div className='w-16 h-16'><Icon src="overwatch/home/play-icon.svg" objectFit="cover" /></div>,
+        light: true,
+        playing: true
+    },
+    render : (args, children) => {
+        return <VideoPlayer {...args}></VideoPlayer>
+    }
+}
