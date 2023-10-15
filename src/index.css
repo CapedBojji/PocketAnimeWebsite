@@ -17,9 +17,6 @@
   font-feature-settings: normal;
 }
 
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
 
 :root {
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
@@ -93,8 +90,6 @@ button:focus-visible {
 
 .full-height-react-player {
   height: 100% !important;
-  aspect-ratio: 16/9 !important;
-  width: auto !important;
 }
 
 .full-height-react-player .react-player {
@@ -129,3 +124,13 @@ button:focus-visible {
   background-color: rgba(93,113,152,.6);
   color: #fff;
 }
+
+.react-player > video {
+  width: 100% !important;
+  height: 100% !important;
+  object-fit: cover;
+}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;

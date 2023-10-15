@@ -33,7 +33,8 @@ type Story = StoryObj<typeof meta>;
 
 export const Default: Story = {
     args : {
-        src: "overwatch/home/play-icon.svg",
-        objectFit: "cover"
+        src: "overwatch/home/xbox.svg",
+        objectFit: "cover",
+        color: "#FF33AF"
     } 
 };
