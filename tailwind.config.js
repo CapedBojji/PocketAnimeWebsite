@@ -7,6 +7,14 @@ export default {
   ],
   theme: {
     extend: {
+      fontFamily: {
+        "Config" : "'Config Condensed'"
+      },
+      backgroundColor: {
+        orange: {
+          500: "#f06414"
+        }
+      }
     },
   },
   plugins: [],

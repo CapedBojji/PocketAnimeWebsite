@@ -23,18 +23,18 @@ function Home() {
     return <> 
         <Section>
             <BackgroundVideo src={BackgroundVideoSrc} />
-            <div className="z-10 w-full max-w-[1600px] mt-14 h-full flex flex-col">
+            <div className="z-10 w-full max-w-[1600px] mt-14 h-full flex flex-col gap-y-4">
                <div>
                 <img src={OverwatchNameImage} className=""/>
                 </div>
-                <div>
+                <div className="flex flex-col gap-y-4 text-center ">
                 <H2 center fontFamily="impact, sans-serif" fontSize="32px" lineHeight="32px" letterSpacing="1px">A Future worth fighting for</H2>
-                <p>TEAM-BASED ACTION  •  FREE TO PLAY</p>
+                <p className="font-bold font-Config leading-5" >TEAM-BASED ACTION  •  FREE TO PLAY</p>
                 </div>
-                <div>
+                <div className="h-[64px] pl-8 pr-8 m-auto bg-orange-500 uppercase font-bold text-[20px]">
                     <SquareButton>Play now</SquareButton>
                 </div>
-                <div>
+                <div className="flex justify-evenly">
                     <div className="w-12 h-12"><Icon src="overwatch/home/xbox.svg" objectFit="cover"/></div>
                     <div className="w-12 h-12"><Icon src="overwatch/home/xbox.svg" objectFit="cover"/></div>
                     <div className="w-12 h-12"><Icon src="overwatch/home/xbox.svg" objectFit="cover"/></div>
